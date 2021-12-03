@@ -6,7 +6,7 @@ const Login = ({ type, color }) => {
 		signInWithPopup(auth, provider)
 	}
 	return (
-		<div className="h-screen">
+		<div className="h-screen flex items-center justify-center">
 			<button className="btn-primary" onClick={loginWithGoogle}>
 				Sign in with Google
 			</button>

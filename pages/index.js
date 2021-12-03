@@ -21,10 +21,13 @@ export default function Home({ todosProps }) {
 
 			<main className="container mx-auto max-w-lg">
 				<TodoContext.Provider value={{ todo, setTodo }}>
-					<div>
-						<img src={currentUser.photoURL} alt="Image failed to load" className="rounded-full mb-6" onClick={() => auth.signOut()} />
+					<div className="flex gap-x-6">
+						<img src={currentUser.photoURL} alt="Image failed to load" className="rounded-full mb-6" />
+						<div>
+							<h1 className="font-bold text-lg mt-4">{currentUser.displayName}</h1>
+							<p className="text-blue-800 text-sm cursor-pointer hover:text-blue-600" onClick={() => auth.signOut()}>Logout</p>
+						</div>
 					</div>
-					<h1 className="font-bold text-lg">{currentUser.displayName}</h1>
 					<TodoForm />
 					<TodoList todosProps={todosProps} />
 				</TodoContext.Provider>
