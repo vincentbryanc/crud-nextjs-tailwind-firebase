@@ -1,0 +1,41 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+html {
+	scroll-behavior: smooth;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* table */
+table thead tr,
+table tbody tr {
+	border-bottom: 1px solid #E5E7EB;
+}
+
+table thead tr th,
+table tbody tr td {
+	padding: 0.5rem 0.5rem;
+	text-align: left;
+	font-size: 0.95rem;
+}
+
+.form-item {
+	@apply flex flex-col mb-5;
+}
+
+.form-control {
+	@apply py-2 border-b border-gray-400 focus:outline-none focus:ring-transparent;
+}
+
+.btn-primary {
+	background-color: #3b82f6;
+	@apply px-6 py-3 text-sm text-white;
+}
+
+.btn-primary:hover {
+	background-color: #1d4ed8;
+}
