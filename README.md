@@ -1,4 +1,4 @@
-# CRUD created with ReactJS, Tailwind, and Firebase
+# CRUD created with NextJS, Tailwind, and Firebase
 
 To run this app,
 
